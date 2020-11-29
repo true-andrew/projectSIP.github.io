@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    src: url(fonts/Spacemonoitalic.ttf);
+    font-family: SpaceMonoItalic;
+}
+
+@font-face {
+    src: url(fonts/LIQUIDO/LIQUIDO-Fluid.otf);
+    font-family: LIQUIDO_F;
+}
+
+@font-face {
+    src: url(fonts/Spacemono.ttf);
+    font-family: SpaceMono;
+}
+
+@font-face {
+    src: url(fonts/Zwizz-Bold.woff);
+    font-family: Zwizz;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 51%, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 52%), linear-gradient(90deg, rgba(0, 0, 0, 0) 51%, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 52%);
+    background-size: 8em 8em;
+    background-color: #1A1A1A;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1610px;
+    margin: 0 auto;
+}
+
+.page1 {
+    margin-top: 84px;
+    margin-bottom: 463px;
+}
+
+.header {
+    width: 100%;
+    padding: 25px 0;
+    z-index: 100;
+}
+
+.references {
+    margin: 0 auto;
+    max-width: 1610px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_fixed {
+    background-color: #1A1A1A;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.links {
+    min-width: 849px;
+    padding-top: 13px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.head {
+    display: flex;
+}
+
+.heading {
+    display: flex;
+}
+
+.want {
+    font-family: LIQUIDO_F;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 180px;
+    line-height: 184px;
+    color: #FFFFFF;
+}
+
+.w1 {
+    position: relative;
+    left: 6px;
+    z-index: 3;
+}
+
+.w2 {
+    position: relative;
+    color: #E84CC7;
+    left: -224px;
+    z-index: 2;
+}
+
+.w3 {
+    position: absolute;
+    color: #56EDD2;
+}
+
+.heading2 {
+    max-width: 607px;
+}
+
+.headSubscription {
+    margin-bottom: 90px;
+    margin-top: 49px;
+    font-family: SpaceMono;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 102%;
+    color: #FFFFFF;
+}
+
+.buttonShadow {
+    display: flex;
+    background: #74CBCF;
+    width: 273px;
+    height: 85px;
+    text-align: center;
+}
+
+.buttonPlay {
+    padding: 31px 70px;
+    font-family: SpaceMonoItalic;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 102%;
+    text-decoration: none;
+    color: black;
+}
+
+.buttonShadow:hover {
+    box-shadow: 0 0 5px 4px #74CBCF;
+}
+
+.buttonShadow:active {
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.headImg {
+    width: 100%;
+}
+
+.page2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 555px;
+}
+
+.text {
+    font-family: SpaceMono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 172.5%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.meteors {
+    width: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meteor2 {
+    margin: 0 0 15%;
+}
+
+.pageTitle {
+    color: black;
+    //text-shadow: white 0 0 4px;
+    -webkit-text-stroke: 2px white; //если что отключим (экспериментальная фича)
+}
+
+.page2text {
+    margin-top: 30px;
+}
+
+.page3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 317px;
+}
+
+.contentPage3 {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //min-width: 30%;
+    //justify-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardHeading {
+    font-family: SpaceMonoItalic;
+    font-size: 24px;
+    line-height: 102%;
+    color: #FFFFFF;
+}
+
+.textScale {
+    font-family: Zwizz;
+    font-weight: 1;
+    font-size: 14px;
+    line-height: 102%;
+    color: white;
+}
+
+.scale {
+    display: flex;
+    margin-top: 16px;
+}
+
+.leftTextScaleGender {
+    padding: 4px 97px 2px 6px;
+    background: linear-gradient(90deg, #E84CC7 0%, #56EDD2 100%);
+}
+
+.rightTextScaleGender {
+    padding: 4px 17px 2px 6px;
+    background-color: white;
+    color: black;
+}
+
+.leftTextScaleEd {
+    padding: 4px 81px 2px 6px;
+    background: linear-gradient(90deg, #E84CC7 0%, #56EDD2 100%);
+}
+
+.rightTextScaleEd {
+    color: black;
+    background: white;
+    padding: 4px 41px 2px 6px;
+}
+
+.leftTextScaleAge {
+    padding: 4px 105px 2px 6px;
+    background: linear-gradient(90deg, #E84CC7 0%, #56EDD2 100%);
+}
+
+.rightTextScaleAge {
+    padding: 4px 7px 2px 6px;
+    background: white;
+    color: black;
+}
+
+.animation {
+    width: 200px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+    margin-top: 129px;
+}
+
+.animationEye {
+    background-image: url(img/eyeStatic.png);
+}
+
+.animationEye:hover {
+    background-image: url(img/eyeDyn.gif);
+}
+
+.animationBrain {
+    background-image: url(img/brainStatic.png);
+}
+
+.animationBrain:hover {
+    background-image: url(img/brainDynamic.gif);
+}
+
+.animationPeople {
+    background-image: url(img/peopleStatic.png);
+}
+
+.animationPeople:hover {
+    background-image: url(img/peopleDynamic.gif);
+}
+
+.features-link {
+    margin-bottom: 50px;
+}
+
+.page4 {
+    padding-top: 117px;
+}
+
+.features {
+    font-family: LIQUIDO_F;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 180px;
+    line-height: 184px;
+    text-align: right;
+    color: white;
+}
+
+.content_box {
+    margin-top: 120px;
+    margin-bottom: 232px;
+}
+
+.box {
+    width: 341px;
+    height: 243px;
+    border: solid 1px white;
+    box-sizing: border-box;
+}
+
+.line {
+    height: 49px;
+    background: white;
+}
+
+.box_body {
+    background: #1A1A1A;
+    padding: 16px 26px 23px 26px;
+}
+
+.box_header {
+    color: #FFFFFF;
+    font-family: SpaceMonoItalic;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 102%;
+}
+
+.box_text {
+    color: #FFFFFF;
+    margin-top: 19px;
+    font-family: SpaceMono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 172.5%;
+}
+
+.line_up {
+    max-width: 1500px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 120px;
+}
+
+.box2 {
+    //margin-right: 100px;
+    margin-left: 165px;
+}
+
+.line_down {
+    display: flex;
+}
+
+.box3 {
+    margin-left: 172px;
+    margin-right: 165px;
+}
+
+.page5 {
+    background-image: url(img/playGame.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    height: 600px;
+    margin-bottom: 332px;
+}
+
+.playGame {
+    font-family: LIQUIDO_F;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 450px;
+    line-height: 540px;
+    color: white;
+}
+
+.pG1 {
+    position: relative;
+    z-index: 3;
+    bottom: 540px;
+    left: 315px;
+}
+
+.pG2 {
+    position: relative;
+    z-index: 2;
+    color: #E84CC7;
+    bottom: 600px;
+}
+
+.pG3 {
+    color: #56EDD2;
+    position: absolute;
+    left: 300px;
+}
+
+.page6 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 504px;
+}
+
+.page6text {
+    margin-top: 30px;
+    margin-bottom: 113px;
+}
+
+.contentHeading {
+    width: 500px;
+    display: flex;
+    margin-bottom: 128px;
+}
+
+.buttonDwnld {
+    padding: 30px 77px;
+}
+
+.page7 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 350px;
+}
+
+.extension {
+    font-family: LIQUIDO_F;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 180px;
+    line-height: 191px;
+}
+
+.ext1 {
+    position: absolute;
+    color: #56EDD2;
+}
+
+.ext2 {
+    position: relative;
+    z-index: 2;
+    color: #E84CC7;
+    left: -523px;
+}
+
+.ext3 {
+    position: relative;
+    z-index: 3;
+    left: 4px;
+}
+
+.buttonInst {
+    padding: 30px 85px;
+}
+
+.carousel-3d {
+    margin-right: 50px;
+    align-self: center;
+    width: 700px;
+    padding: 20px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-3d>* {
+    flex: 0 0 auto;
+}
+
+.carousel-3d figure {
+    margin: 0;
+    width: 50%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.carousel-3d figure img,
+.carousel-3d figure div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.carousel-3d figure div:not(:first-of-type),
+.carousel-3d figure img:not(:first-of-type) {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.nav {
+    margin: 20px;
+}
+
+.nav.prev {
+    margin-right: 100px;
+}
+
+.footer {
+    background: linear-gradient(90deg, #E84CC7 -19.45%, #56EDD2 120.42%);
+}
+
+.contactForm {
+    max-width: 1280px;
+    margin: 170px auto;
+}
+
+.contactTextBlock {
+    padding: 104px 157px 111px;
+    background-color: #1A1A1A;
+    box-sizing: border-box;
+    border: solid 1px white;
+}
+
+.contactText1 {
+    color: white;
+    font-family: SpaceMono;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 102%;
+}
+
+.contactText2 {
+    color: white;
+    font-family: LIQUIDO_F;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 170px;
+    line-height: 102%;
+}
+
+.gamepad {
+    position: relative;
+    bottom: 50px;
+    left: 600px;
+}
+
+.inputEmail {
+    margin-top: 34px;
+    border-bottom: 1px white solid;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    width: 60%;
+    height: 50px;
+    font-family: SpaceMono;
+    background-color: #1A1a1a;
+    color: white;
+    padding-left: 5px;
+}
+
+.form_button {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+}
+
+.buttonContact {
+    padding: 25px 41px 25px;
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1600px;
+    }
+    .want {
+        font-size: 140px;
+    }
+    .w1 {
+        left: 4px;
+    }
+    .w2 {
+        left: -168px;
+    }
+    .features {
+        font-size: 140px;
+    }
+    .extension {
+        font-size: 140px;
+    }
+    .ext2 {
+        left: -410px;
+    }
+    .leftTextScaleGender {
+        padding: 4px 77px 2px 6px;
+    }
+    .rightTextScaleGender {
+        padding: 4px 15px 2px 6px;
+    }
+    .leftTextScaleEd {
+        padding: 4px 69px 2px 6px;
+    }
+    .rightTextScaleEd {
+        padding: 4px 25px 2px 6px;
+    }
+    .leftTextScaleAge {
+        padding: 4px 85px 2px 6px;
+    }
+    .rightTextScaleAge {
+        padding: 4px 5px 2px 6px;
+    }
+    .carousel-3d {
+        width: 450px;
+    }
+    .contentPage3 {
+        width: auto;
+    }
+}
