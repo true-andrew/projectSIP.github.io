@@ -165,6 +165,14 @@ img {
     margin-bottom: 555px;
 }
 
+.bigScreen {
+    display: block;
+}
+
+.littleScreen {
+    display: none;
+}
+
 .text {
     font-family: SpaceMono;
     font-style: normal;
@@ -181,10 +189,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.meteor2 {
-    margin: 0 0 15%;
 }
 
 .pageTitle {
@@ -481,7 +485,6 @@ img {
 }
 
 .carousel-3d {
-    margin-right: 50px;
     align-self: center;
     width: 700px;
     padding: 20px;
@@ -594,8 +597,6 @@ button {
     font: inherit;
     color: inherit;
     background-color: transparent;
-    /* отображаем курсор в виде руки при наведении; некоторые
-    считают, что необходимо оставлять стрелочный вид для кнопок */
     cursor: pointer;
 }
 
@@ -603,9 +604,21 @@ button {
     padding: 25px 41px 25px;
 }
 
-@media (max-width: 1600px) {
+@media(min-width: 1610px) {
+    .bigScreen {
+        display: block;
+    }
+    .littleScreen {
+        display: none;
+    }
+}
+
+@media (max-width: 1610px) {
     .container {
         max-width: 1280px;
+    }
+    .links {
+        justify-content: space-between;
     }
     .want {
         font-size: 140px;
@@ -615,6 +628,18 @@ button {
     }
     .w2 {
         left: -168px;
+    }
+    .meteors {
+        width: 50vw;
+    }
+    .meteor {
+        max-width: 75%;
+    }
+    .bigScreen {
+        display: block;
+    }
+    .littleScreen {
+        display: none;
     }
     .features {
         font-size: 140px;
@@ -644,9 +669,33 @@ button {
         padding: 4px 5px 2px 6px;
     }
     .carousel-3d {
-        width: 450px;
+        width: 550px;
     }
     .contentPage3 {
         width: auto;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1024px;
+    }
+    .want {
+        font-size: 110px;
+    }
+    .w2 {
+        left: -136px;
+    }
+    .littleScreen {
+        display: block;
+    }
+    .bigScreen {
+        display: none;
+    }
+    .line_up {
+        justify-content: flex-start;
+    }
+    .contentP6 {
+        padding: 70px 0;
     }
 }
