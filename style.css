@@ -70,8 +70,6 @@ img {
 }
 
 .references {
-  margin: 0 auto;
-  max-width: 1610px;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,7 +700,7 @@ button {
 
 @media (max-width: 1600px) {
   .container {
-    max-width: 1600px;
+    max-width: 1280px;
   }
   .want {
     font-size: 140px;
