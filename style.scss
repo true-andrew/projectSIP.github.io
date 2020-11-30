@@ -178,8 +178,9 @@ img {
 }
 
 .headContent {
-    width: 1025px;
-    background-image: url(img/headImg.png);
+    width: 800px;
+    background-image: url(img/battle.gif);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -352,6 +353,9 @@ img {
 }
 
 .content_box {
+    background-image: url(img/bullets.gif);
+    background-repeat: repeat repeat;
+    background-size: 50%;
     margin-top: 120px;
     margin-bottom: 232px;
 }
