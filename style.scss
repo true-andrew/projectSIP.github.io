@@ -81,7 +81,16 @@ img {
     left: 0;
 }
 
+.menu_triger {
+    display: none;
+}
+
+#menuCheck {
+    display: none;
+}
+
 .links {
+    z-index: 500;
     min-width: 849px;
     padding-top: 13px;
     display: flex;
@@ -933,5 +942,277 @@ button {
     }
     .box_layer2 {
         width: 322px;
+    }
+}
+
+@media (max-width:1024px) {
+    //мобилка
+    .container {
+        width: 375px;
+    }
+    .menu_triger {
+        display: block;
+    }
+    .links {
+        display: none;
+        flex-direction: row;
+        min-width: 375px;
+    }
+    #menuCheck:checked+.links {
+        display: flex;
+    }
+    .head {
+        flex-direction: column;
+    }
+    .heading {
+        justify-content: center;
+    }
+    .heading2 {
+        text-align: center;
+    }
+    .w1 {
+        left: 72px;
+    }
+    .w2 {
+        left: -68px;
+    }
+    .headSubscription span {
+        display: none;
+    }
+    .headSubscription {
+        height: 242px;
+        background-image: url(img/headImgMobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 19px;
+        margin-bottom: 81px;
+    }
+    .buttonShadow {
+        width: 180px;
+        margin: 0 auto;
+    }
+    .page1 {
+        margin-bottom: 85px;
+    }
+    .page2 {
+        flex-direction: column-reverse;
+    }
+    .meteors {
+        flex-direction: column;
+        align-self: center;
+    }
+    .pageTitle {
+        text-align: center;
+    }
+    .pageTitleTwo {
+        text-align: center;
+    }
+    .page2text {
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
+    .meteor {
+        max-width: 100%;
+        margin-top: 39px;
+    }
+    .meteor1 {
+        content: url(img/meteor1Mobile.png);
+    }
+    .meteor2 {
+        content: url(img/meteor2Mobile.png);
+    }
+    .meteor3 {
+        content: url(img/meteor3Mobile.png);
+    }
+    .page2 {
+        margin-bottom: 161px;
+    }
+    .page3 {
+        flex-direction: column;
+        margin-bottom: 45px;
+    }
+    .page2text span {
+        display: none;
+    }
+    .animation {
+        background: none;
+        width: 0;
+        height: 0;
+    }
+    .contentPage3 {
+        flex-direction: column;
+        width: 375px;
+    }
+    .contentPage3::after {
+        content: "Play Game" attr(href);
+        padding: 17px 39px;
+        font-family: SpaceMonoItalic;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 102%;
+        text-decoration: none;
+        color: black;
+        background: #5FCDE4;
+        margin-top: 100px;
+    }
+    .page3Title {
+        font-size: 96px;
+        line-height: 102%;
+    }
+    .card {
+        margin-top: 50px;
+    }
+    .cardHeading {
+        font-size: 24px;
+    }
+    .textScale {
+        font-size: 14px;
+    }
+    .leftTextScaleGender {
+        padding: 4px 97px 2px 6px;
+        background: linear-gradient(90deg, #E84CC7 0%, #56EDD2 100%);
+    }
+    .rightTextScaleGender {
+        padding: 4px 17px 2px 6px;
+        background-color: white;
+        color: black;
+    }
+    .leftTextScaleEd {
+        padding: 4px 81px 2px 6px;
+        background: linear-gradient(90deg, #E84CC7 0%, #56EDD2 100%);
+    }
+    .rightTextScaleEd {
+        color: black;
+        background: white;
+        padding: 4px 41px 2px 6px;
+    }
+    .leftTextScaleAge {
+        padding: 4px 105px 2px 6px;
+        background: linear-gradient(90deg, #E84CC7 0%, #56EDD2 100%);
+    }
+    .rightTextScaleAge {
+        padding: 4px 7px 2px 6px;
+        background: white;
+        color: black;
+    }
+    .features {
+        text-align: center;
+    }
+    .content_box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .line_up {
+        display: flex;
+        flex-direction: column;
+        height: 348px;
+        margin-bottom: 145px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .box_layer2 {
+        margin-left: 0;
+    }
+    .line_down {
+        margin-top: 66px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box3 {
+        margin: 0 0 66px 0;
+    }
+    .page5 {
+        background-position: center;
+        background-size: 160%;
+        margin-bottom: 0px;
+    }
+    .page6 {
+        flex-direction: column;
+    }
+    .littleScreen span {
+        display: none;
+    }
+    .page6text {
+        width: 375px;
+        height: 300px;
+        background-image: url(img/picture6screen.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .page6Title {
+        font-size: 88px;
+    }
+    .contentP6 {
+        display: none;
+    }
+    .page6 {
+        margin-bottom: 138px;
+    }
+    .page7 {
+        flex-direction: column;
+        margin-bottom: 176px;
+    }
+    .extension {
+        font-size: 96px;
+        text-align: center;
+    }
+    .ext2 {
+        left: -139px;
+    }
+    .ext3 {
+        left: 146px;
+    }
+    .contentHeading {
+        justify-content: center;
+        width: 375px;
+    }
+    .carousel-3d {
+        width: 350px;
+        margin-top: 100px;
+    }
+    .contactTextBlock {
+        padding: 39px 30px 64px;
+        background-color: transparent;
+        box-sizing: border-box;
+        border: none;
+    }
+    .lineFooter {
+        background-color: transparent;
+    }
+    .gamepad {
+        display: none;
+    }
+    .contactText1 {
+        color: black;
+        font-size: 18px;
+    }
+    .contactText2 {
+        color: black;
+        font-size: 72px;
+    }
+    .form_button {
+        flex-direction: column;
+    }
+    .inputEmail {
+        color: black;
+        background-color: transparent;
+        border-bottom: 1px black solid;
+        width: 100%;
+    }
+    .contactForm {
+        width: 375px;
+        margin: 0 auto;
+    }
+    .buttonSubmit {
+        margin-top: 69px;
+        align-self: center;
+        background: #1A1A1A;
+        width: 152px;
+        height: 47px;
+    }
+    .buttonPlaySubmit {
+        font-size: 11px;
+        color: white;
     }
 }
