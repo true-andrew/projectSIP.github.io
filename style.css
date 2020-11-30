@@ -52,6 +52,14 @@ img {
           flex-grow: 1;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
 .container {
   max-width: 1610px;
   margin: 0 auto;
@@ -398,11 +406,58 @@ img {
 }
 
 .box {
+  z-index: 50;
   width: 341px;
   height: 243px;
   border: solid 1px white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.box_layer1 {
+  z-index: 24;
+  width: 341px;
+  height: 70px;
+  background-color: #FFE662;
+  background-image: url(img/greenBuddy.png);
+  background-repeat: no-repeat;
+  -webkit-animation: greenBuddyMove 5s infinite ease-out;
+          animation: greenBuddyMove 5s infinite ease-out;
+}
+
+@-webkit-keyframes greenBuddyMove {
+  from {
+    background-position: left bottom;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  to {
+    background-position: left bottom;
+  }
+}
+
+@keyframes greenBuddyMove {
+  from {
+    background-position: left bottom;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  to {
+    background-position: left bottom;
+  }
+}
+
+.box1 {
+  z-index: 50;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.box1:hover {
+  -webkit-transform: translate(0, 65px);
+          transform: translate(0, 65px);
 }
 
 .line {
@@ -412,7 +467,7 @@ img {
 
 .box_body {
   background: #1A1A1A;
-  padding: 16px 26px 23px 26px;
+  padding: 16px 26px 25px 26px;
 }
 
 .box_header {
@@ -435,6 +490,7 @@ img {
 
 .line_up {
   max-width: 1500px;
+  height: 243px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,8 +500,49 @@ img {
   margin-bottom: 120px;
 }
 
-.box2 {
+@-webkit-keyframes redBuddyMove {
+  from {
+    background-position: right bottom;
+  }
+  50% {
+    background-position: center bottom;
+  }
+  to {
+    background-position: right bottom;
+  }
+}
+
+@keyframes redBuddyMove {
+  from {
+    background-position: right bottom;
+  }
+  50% {
+    background-position: center bottom;
+  }
+  to {
+    background-position: right bottom;
+  }
+}
+
+.box_layer2 {
+  width: 341px;
+  height: 70px;
   margin-left: 165px;
+  background-color: #6ABE30;
+  background-image: url(img/redBuddy.png);
+  background-repeat: no-repeat;
+  -webkit-animation: redBuddyMove 3s infinite ease-out;
+          animation: redBuddyMove 3s infinite ease-out;
+}
+
+.box2 {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.box2:hover {
+  -webkit-transform: translate(0, 65px);
+          transform: translate(0, 65px);
 }
 
 .line_down {
@@ -964,6 +1061,12 @@ button {
     width: 206px;
     height: 65px;
     margin-top: 20px;
+  }
+  .box_layer1 {
+    width: 322px;
+  }
+  .box_layer2 {
+    width: 322px;
   }
 }
 /*# sourceMappingURL=style.css.map */
